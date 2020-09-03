@@ -7,11 +7,10 @@
 #include <conio.h>
 
 // I thought i would complete all the tasks in a single .cpp file. 
-// I don't know if this is worse for preformance, but it was much easier to work on,
-// aswell as handing, because a few of the projects use the same #include's. 
+// I don't know if this is worse for preformance, but i thought it would be nice for learning Functions.
 //
 // I went about solving this using Functions to keep the main() all nice and tidy lookin.
-// And using a switchcase to detect which-one to select next.
+// And using a 
 
 int index;
 
@@ -67,7 +66,7 @@ int index;
 		std::cout << "-----------------------------------------------------------------------------\n";
 		std::cout << "That was task 1 \n";
 		std::cout << "Press any key to continue to the next task \n";
-		_getch();
+		int blue = _getch();
 		
 
 		return 0;
@@ -110,7 +109,7 @@ int index;
 		std::cout << "-----------------------------------------------------------------------------\n";
 		std::cout << "That was task 2 \n";
 		std::cout << "Press any key to continue \n";
-		_getch();
+		int blue = _getch();
 
 
 		return 0;
@@ -145,7 +144,7 @@ int index;
 		std::cout << "-----------------------------------------------------------------------------\n";
 		std::cout << "That was task 3 \n";
 		std::cout << "Press any key to continue to the next task \n";
-		_getch();
+		int blue = _getch();
 		
 		return 0;
 	}
@@ -153,18 +152,33 @@ int index;
 	//Task 4
 	int Task04()
 	{
+		int beverageChoice;
+		//What is your favorite beverage? 
+		std::cout << "Hi! What is your preferred beverage of choice? \n";
+		std::cout << "Just select the number that corresponds with your choise : \n";
+		std::cout << "1. Coffee \n" << "2. Tea \n" << "3. Coca Cola \n";
+		std::cin >> beverageChoice;
 
-
-
-
+		switch (beverageChoice)
+		{
+		case 1 :
+			std::cout << "Coffee is delicious! \n";
+			break;
+		case 2 : 
+			std::cout << "Tea gives you peace of mind. \n";
+			break;
+		case 3 :
+			std::cout << "Coke will give you a white smile. \n";
+		default:
+			break;
+		}
 
 		//end procedure
 		std::cin.clear();
-		std::cout << "-----------------------------------------------------------------------------\n";
+		std::cout << " \n-----------------------------------------------------------------------------\n";
 		std::cout << "This was task 4 \n";
 		std::cout << "Press any key to continue to the next task \n";
-		_getch();
-
+		int blue = _getch();
 
 		return 0;
 	}
@@ -172,10 +186,13 @@ int index;
 	//Task 5
 	int Task05()
 	{
+
+
+
 		std::cin.clear();
 		std::cout << "-----------------------------------------------------------------------------\n";
 		std::cout << "That was the last task. hope this would\n" << "be a passing grade in a compulsary, Just very overcomplicated! ";
-		_getch();
+		int blue = _getch();
 		
 
 		return 0;
@@ -188,16 +205,16 @@ int index;
 	int main()
 	{
 		
-		index = Task01();
+		/*index = Task01();
 		std::cout << std::endl << std::endl;
 		index = Task02();
 		std::cout << std::endl << std::endl;
-		
 		index = Task03();
-		std::cout << std::endl << std::endl;
+		*/std::cout << std::endl << std::endl;
 		index = Task04();
 		std::cout << std::endl << std::endl;
 		index = Task05();
 		std::cout << std::endl << std::endl;
+
 
 	}
