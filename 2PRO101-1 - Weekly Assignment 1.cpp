@@ -12,6 +12,9 @@
 // I went about solving this using Functions to keep the main() all nice and tidy lookin.
 // And using a 
 
+int Task01();
+
+
 int index;
 
 	//Task 1
@@ -173,7 +176,7 @@ int index;
 			break;
 		}
 
-		//end procedure
+		//End procedure
 		std::cin.clear();
 		std::cout << " \n-----------------------------------------------------------------------------\n";
 		std::cout << "This was task 4 \n";
@@ -183,18 +186,46 @@ int index;
 		return 0;
 	}
 
-	//Task 5
+	//Task 5 - Print a grid
 	int Task05()
 	{
+		/*
+		//std::cout << "-------------------";
+		//std::cout << "på samme linje";
+		std::cout << "		1	2	3	4	5	6		" << std::endl;
+		std::cout << "	   =======================" << std::endl;
+		std::cout << " A  | * | * | * | * | * | * |";
+		std::cout << "	   =======================" << std::endl;
+		std::cout << " B  | * | * | * | * | * | * |";
+		std::cout << "	   =======================" << std::endl;
+		std::cout << " C  | * | * | * | * | * | * |" << std::endl;
+		std::cout << "	   =======================" << std::endl;
+		std::cout << " D  | * | * | * | * | * | * |" << std::endl;
+		std::cout << "	   =======================" << std::endl;
+		
+		
+		*/
+		int tall[] = { 1,2,3,4,5,6 };
+		std::string bokstaver[] = { "A","B","C","D" };
+		
+		int tallLengde = sizeof(tall)/sizeof(tall[0]);
+		int bokstaverLengde = sizeof(bokstaver)/sizeof(bokstaver[0]);
 
 
 
+		std::cout << tallLengde << std::endl; 
+		std::cout << bokstaverLengde ;
+
+
+		
+
+		/*
 		std::cin.clear();
 		std::cout << "-----------------------------------------------------------------------------\n";
 		std::cout << "That was the last task. hope this would\n" << "be a passing grade in a compulsary, Just very overcomplicated! ";
 		int blue = _getch();
 		
-
+		*/
 		return 0;
 	}
 
@@ -210,11 +241,11 @@ int index;
 		index = Task02();
 		std::cout << std::endl << std::endl;
 		index = Task03();
-		*/std::cout << std::endl << std::endl;
-		index = Task04();
 		std::cout << std::endl << std::endl;
+		index = Task04(); 
+		std::cout << std::endl << std::endl; */
 		index = Task05();
 		std::cout << std::endl << std::endl;
+		
 
-
-	}
+	}	
